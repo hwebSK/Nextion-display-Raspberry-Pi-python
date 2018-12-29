@@ -36,6 +36,6 @@ while True:
     #zapis do nextion plus ukoncovaci EOF
     con.write(alt1)
     con.write(alt2)
+    time.sleep(20)
     
-    time.sleep(180)   
     TS.close()
