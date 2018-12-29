@@ -29,11 +29,12 @@ while True:
     b = data['field1'].encode('utf-8')
     c = data['field2'].encode('utf-8')
     print a + "    " + b + "    " + c
-
+    
+    #t5, t6 is a text field in the Nextion editor where the data is displayed + end EOF
     alt1 = 'page0.t5.txt="'+b+'"'+eof
     alt2 = 'page0.t6.txt="'+c+'"'+eof
 
-    #zapis do nextion plus ukoncovaci EOF
+    #write to nextion
     con.write(alt1)
     con.write(alt2)
     time.sleep(20)
