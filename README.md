@@ -1,2 +1,2 @@
 # Nextion-raspberry-python
-Rraspberry sends out data to the Nextion display of thingspeak.
+Raspberry Pi 3 Model B+ sends out data to the Nextion display of thingspeak.
