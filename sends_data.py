@@ -37,6 +37,8 @@ while True:
     #write to nextion
     con.write(alt1)
     con.write(alt2)
-    time.sleep(20)
     
     TS.close()
+    time.sleep(20)
+    
+    
