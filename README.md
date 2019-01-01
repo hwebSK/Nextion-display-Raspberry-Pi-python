@@ -2,7 +2,7 @@
 **sends_data.py** - Raspberry Pi 3 Model B+ read data from thingspeak and sends to Nextion display. 
 **read_influxdb_data_to_nextion.py** - Read influxdb last row and send to Nextion display.
 
-## Configuring The GPIO Serial Port On Raspbian Jessie and Stretch Including Pi 3
+## Configuring The GPIO Serial Port On Raspbian Stretch Including Pi 3
 - `sudo raspi-config`<br/>
 *5 Interfacing Options* - Enter<br/>
 *P6 Serial* - Enter<br/>
