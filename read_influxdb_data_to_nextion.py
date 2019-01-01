@@ -19,8 +19,7 @@ while True:
 	username=username, password=password)
 
 	results = client.query(("SELECT time, %s,%s,%s FROM %s ORDER BY time DESC LIMIT 1") % 
-							(device1, device2, device3, measurement)
-							)
+				(device1, device2, device3, measurement))
 	points = results.get_points()
 
 
@@ -51,11 +50,13 @@ while True:
 	    bytesize=serial.EIGHTBITS,
 	)
 
-	alt1 = 'page0.t5.txt="'+str(a)+'"'+eof
-	alt2 = 'page0.t6.txt="'+str(b)+'"'+eof
+	alt1 = 'page0.t1.txt="'+str(a)+'"'+eof
+	alt2 = 'page0.t2.txt="'+str(b)+'"'+eof
+	alt3 = 'page0.t2.txt="'+str(c)+'"'+eof
 
 	con.write(alt1)
 	con.write(alt2)
+	con.write(alt3)
 	
 	#undimCmd = "dim=30"
 	#con.write(undimCmd + eof) #set screen brightness to 30%
