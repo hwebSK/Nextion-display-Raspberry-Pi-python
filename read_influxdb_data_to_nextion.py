@@ -22,7 +22,6 @@ while True:
 				(device1, device2, device3, measurement))
 	points = results.get_points()
 
-
 	for item in points:
 	    a = (item[device1])
 	    b = (item[device2])
