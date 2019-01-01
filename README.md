@@ -21,3 +21,5 @@ write to the end:<br/>
 enable_uart=1*<br/>
 
 - `sudo reboot`
+
+correct to have a serial port working on a Pi 3B called '/dev/serial0
