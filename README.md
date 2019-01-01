@@ -7,7 +7,7 @@
 *5 Interfacing Options* - Enter<br/>
 *P6 Serial* - Enter<br/>
 *Would you like a login shell to be accessible over serial?* - Enert NO<br/>
-*Would you like the serial port hardware to be enabled? * - Enter YES<br/>
+*Would you like the serial port hardware to be enabled?* - Enter YES<br/>
 
 - `sudo nano /boot/cmdline.txt`<br/>
 find:<br/>
