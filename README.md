@@ -3,21 +3,21 @@
 **read_influxdb_data_to_nextion.py** - Read influxdb last row and send to nextion display.
 
 ## Configuring The GPIO Serial Port On Raspbian Jessie and Stretch Including Pi 3
-- `sudo raspi-config` 
-*5 Interfacing Options* - Enter
-*P6 Serial* - Enter
-*Would you like a login shell to be accessible over serial?* - Enert NO
-*Would you like the serial port hardware to be enabled? *- Enter YES
+- `sudo raspi-config`<br/>
+*5 Interfacing Options* - Enter<br/>
+*P6 Serial* - Enter<br/>
+*Would you like a login shell to be accessible over serial?* - Enert NO<br/>
+*Would you like the serial port hardware to be enabled? *- Enter YES<br/>
 
-- `sudo nano /boot/cmdline.txt`
-find:
-*console=serial<span style="color:red">0</span>*
- and replace:
-*console=serial<span style="color:red">1</span>*
+- `sudo nano /boot/cmdline.txt`<br/>
+find:<br/>
+*console=serial<span style="color:red">0</span>*<br/>
+ and replace:<br/>
+*console=serial<span style="color:red">1</span>*<br/>
 
-- `sudo nano /boot/config.txt`
-write to the end:
-*dtoverlay=pi3-disable-bt
-enable_uart=1*
+- `sudo nano /boot/config.txt`<br/>
+write to the end:<br/>
+*dtoverlay=pi3-disable-bt<br/>
+enable_uart=1*<br/>
 
 - `sudo reboot`
