@@ -11,7 +11,7 @@
 
 - `sudo nano /boot/cmdline.txt`<br/>
 find:<br/>
-*console=serial```diff0*<br/>
+*console=serial0*<br/>
  and replace:<br/>
 *console=serial<span style="color:red">1</span>*<br/>
 
